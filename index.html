@@ -17,6 +17,20 @@
       </div>
     </header>
     <main>
+      <section id="seccionUno" class="seccionPrimera">
+        <h2 id="presentacion">Antes que nada, buenos dias. Luego tus datos.</h2>
+        <div class="btn-grupo">
+          <button id="saludo" class="btn">Saludo</button>
+        </div>
+
+        <!--no me dio el tiempo para esto y deje el Alert
+          <div>
+          <h2 id="saludo"></h2>
+        </div>-->
+
+      </section>
+
+
       <section>
         <div>
           <a class="" href="./pages/tablaMulti.html"
@@ -32,6 +46,25 @@
           <a class="" href="./pages/calculadora.html">Calculadora</a>
         </div>
       </section>
+
+      <section>
+        <form id="formulario">
+          <label for="nombre">Coloque su nombre:</label>
+          <input type="text" id="nombre" name="nombre" required pattern="[a-zA-Z\s]+" title="Ingrese solo letras" /><br><br>
+      
+          <label for="apellido">Coloque su apellido:</label>
+          <input type="text" id="apellido" name="apellido" required pattern="[a-zA-Z\s]+" title="Ingrese solo letras" /><br><br>
+      
+          <input type="submit" value="Enviar" id="enviarBtn">
+          <button type="button" id="borrarTodoBtn">Borrar Todo</button>
+        </form>
+      
+        <div id="lista"></div>
+        
+      </section>
+
+     
+
     </main>
     <footer></footer>
     <script src="./js/main.js"></script>
