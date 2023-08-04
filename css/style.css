@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.5rem;
+  
+}
+
+.estiloBody {
+  background-image: linear-gradient(to top, #4d8ded, #8ea6f1, #bcc1f5, #e0dffa, #ffffff);
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.divJuegos {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+aside {
+  padding: 2rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menuJuegos {
+  margin: 1rem;
+  padding: 2rem;
+  margin-left: 0;
+  border: 2px solid black;
+}
+
+.contenedorJuegos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.juegoImagen {
+  max-width: 100%;
+}
+
+.juegoDatos {
+  border: 2px solid black;
+}

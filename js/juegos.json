@@ -1,0 +1,67 @@
+[
+    {
+      "id": "inflable-01",
+      "titulo": "Inflable Conejo",
+      "imagen": "./img/inflables/inflable01.jpg",
+      "categoria": {
+        "nombre": "Inflables",
+        "id": "inflables"
+      },
+      "precio": 7000
+    },
+    
+    {
+      "id": "inflable-02",
+      "titulo": "Inflable Castillo",
+      "imagen": "./img/inflables/inflable02.jpg",
+      "categoria": {
+        "nombre": "Inflables",
+        "id": "inflables"
+      },
+      "precio": 8000
+    },
+    
+    {
+      "id": "inflable-03",
+      "titulo": "Inflable Pirata",
+      "imagen": "./img/inflables/inflable03.jpg",
+      "categoria": {
+        "nombre": "Inflables",
+        "id": "inflables"
+      },
+      "precio": 9000
+    },
+    
+    {
+      "id": "mesa-01",
+      "titulo": "Mesa Pool",
+      "imagen": "./img/mesa/mesa01.jpg",
+      "categoria": {
+        "nombre": "Mesa",
+        "id": "mesa"
+      },
+      "precio": 5000
+    },
+    
+    {
+      "id": "mesa-02",
+      "titulo": "Mesa Metegol",
+      "imagen": "./img/mesa/mesa02.jpg",
+      "categoria": {
+        "nombre": "Mesa",
+        "id": "mesa"
+      },
+      "precio": 5000
+    },
+    
+    {
+      "id": "mesa-03",
+      "titulo": "Mesa PingPong",
+      "imagen": "./img/mesa/mesa03.jpg",
+      "categoria": {
+        "nombre": "Mesa",
+        "id": "mesa"
+      },
+      "precio": 5000
+    }
+    ]

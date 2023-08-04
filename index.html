@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styleapp.css" />
   </head>
 
-  <body>
+  <body class="estiloBody">
     <header>
       <div>
         <h1>
@@ -38,19 +43,20 @@
             type="text"
             class="apellido-input"
             required
-            pattern="[a-zA-Z\s]+"  
+            pattern="[a-zA-Z\s]+"
             placeholder="Apellido del invitado"
           /><br /><br />
 
           <button type="submit" class="enviar-btn">Sumar invitado</button>
-          
         </form>
       </section>
       <br />
       <br />
 
       <section>
-        <h2>Lista de Invitados (si cierras la página, la lista no se borrará):</h2>
+        <h2>
+          Lista de Invitados (si cierras la página, la lista no se borrará):
+        </h2>
         <ol class="lista"></ol>
         <h2>Pulsa aquí si quieres borrar la lista</h2>
         <button type="button" class="borrar-todo-btn">Borrar Todo</button>
@@ -59,7 +65,7 @@
       <br />
 
       <section>
-        <h2>Elige un precio:</h2>
+        <h2>Elige un precio (por persona):</h2>
         <input type="checkbox" class="precio-checkbox" value="5000" />Precio
         Básico ($5000)<br />
         <input type="checkbox" class="precio-checkbox" value="7000" />Precio
@@ -67,18 +73,91 @@
         <input type="checkbox" class="precio-checkbox" value="9000" />Precio
         Premium ($9000)<br />
         <br />
-        <button type="button" class="calcular-precio-btn">
-          Calcular Precio Total
-        </button>
       </section>
       <br />
       <br />
 
       <section>
-        <h2 id="costo-fiesta"></h2>
+        <div>
+          <button type="button" class="calcular-precio-btn">
+            Calcular Costo de Servicio
+          </button>
+          <h2 id="costo-fiesta"></h2>
+        </div>
+      </section>
+      <br />
+      <h2>Sumale algunos juegos para no aburrirse</h2>
+      <br />
+      <section>
+        <div class="divJuegos">
+          <aside>
+            <nav>
+              <ul>
+                <li>
+                  <button class="botonJuegos" id="todosJuegos">
+                    Todos los Juegos
+                  </button>
+                </li>
+                <!--<li><button class="botonJuegos" id="inflables">Inflables</button></li>
+                <li><button class="botonJuegos" id="mesa">De Mesa</button></li>-->
+              </ul>
+            </nav>
+          </aside>
+
+          <main class="menuJuegos">
+            <h2 class="tituloJuegos">Todos los juegos disponibles</h2>
+
+            <div id="contenedorJuegos" class="contenedorJuegos"></div>
+          </main>
+        </div>
+      </section>
+      <br />
+      <div id="juegosElegidos"></div>
+      <br />
+
+      <section>
+        <div>
+          <button type="button" class="calcular-precio2-btn">
+            Calcular Costo Total Juegos
+          </button>
+          <h2 id="costo-juegos-total"></h2>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <button type="button" class="calcular-precioT-btn">
+            Calcular Costo Total de Servicio y Juegos
+          </button>
+          <h2 id="costo-fiesta-total"></h2>
+        </div>
+      </section>
+
+      <section class="div-clima-app">
+        <h2>Mira como esta el clima</h2>
+        <div id="contenedor">
+          <div id="caja1">
+            <h1 id="temperatura-valor"></h1>
+            <h1 id="temperatura-descripcion"></h1>
+          </div>
+          <div id="caja2">
+            <h2 id="ubicacion"></h2>
+            <img id="icono-animado" src="" alt="" height="128" width="128" />
+          </div>
+          <div id="caja3">
+            <h3>Veloc. del Viento</h3>
+            <h1 id="viento-velocidad"></h1>
+          </div>
+        </div>
       </section>
     </main>
+
     <footer></footer>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <script src="./js/main.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
